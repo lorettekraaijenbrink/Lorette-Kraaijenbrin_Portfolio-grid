@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #c3cfe2;
+  padding: 30px 20px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+}
+
+.grid-portfolio {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 320px;
+      grid-template-columns: 320px;
+  grid-gap: 15px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.grid-portfolio__card {
+  position: relative;
+  width: 320px;
+  height: 384px;
+}
+
+.grid-portfolio__card:hover .grid-portfolio__card__read-more {
+  opacity: 0.8;
+}
+
+.grid-portfolio__card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.grid-portfolio__card__read-more {
+  width: 100%;
+  opacity: 0;
+  transition: opacity 2s;
+  -moz-transition: opacity 2s;
+  -webkit-transition: opacity 2s;
+  -o-transition: opacity 2s;
+  position: absolute;
+  background: blue;
+  top: 0;
+  left: 0;
+  border-radius: 5%;
+  text-align: center;
+  line-height: 384px;
+}
+
+.grid-portfolio__card__read-more a {
+  border-radius: 5%;
+  background-color: #fff;
+  color: black;
+  padding: 5px;
+  text-decoration: none;
+}
+
+@media (min-width: 600px) {
+  .grid-portfolio {
+    -ms-grid-columns: 280px 280px;
+        grid-template-columns: 280px 280px;
+  }
+  .grid-portfolio__card {
+    width: 280px;
+    height: 336px;
+  }
+  .grid-portfolio__card img {
+    width: 280px;
+    height: 336px;
+  }
+  .grid-portfolio__card__read-more {
+    width: 280px;
+    line-height: 336px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 900px) {
+  .grid-portfolio {
+    -ms-grid-columns: 260px 260px 260px;
+        grid-template-columns: 260px 260px 260px;
+  }
+  .grid-portfolio__card {
+    width: 260px;
+    height: 312px;
+  }
+  .grid-portfolio__card img {
+    width: 260px;
+    height: 312px;
+  }
+  .grid-portfolio__card__read-more {
+    width: 260px;
+    line-height: 312px;
+    text-align: center;
+  }
+}
+
+.testimonial {
+  width: 500px;
+  -webkit-box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 20px;
+  margin: auto;
+}
+
+.testimonial__text {
+  height: 300px;
+  background-color: #fff;
+  padding: 20px 30px;
+  border-radius: 20px 20px 0px 0px;
+  font-weight: 550;
+  color: darkslategrey;
+  line-height: 2;
+  font-size: 20px;
+}
+
+.testimonial__image {
+  text-align: center;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #fff), color-stop(50%, #686de0));
+  background: linear-gradient(to bottom, #fff 50%, #686de0 50%);
+}
+
+.testimonial__image img {
+  vertical-align: middle;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 5px solid #fff;
+}
+
+.testimonial__footer {
+  height: 150px;
+  background-color: #686de0;
+  padding: 10px 20px 30px;
+  border-radius: 0px 0px 20px 20px;
+  text-align: center;
+}
+
+.testimonial__footer p {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 26px;
+  margin: 0px 0px 3px 0px;
+  font-weight: 500;
+  letter-spacing: 1.1px;
+}
+
+.testimonial__footer a {
+  text-decoration: none;
+  font-size: 22px;
+  color: lightgray;
+}
+/*# sourceMappingURL=styles.css.map */
